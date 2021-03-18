@@ -5,7 +5,8 @@
 }
 body
 {
-	background-color: #fff9b0;
+	background-image: url(../pintura.png);
+	/*background-color: #fff9b0;*/
 }
 
  .ojos12{
@@ -15,9 +16,11 @@ body
         text-align: center;
     }
     .vista12{
+		top: 100px;
+		left: 80px;
         width: 240px;
-        height: 120px;
-        background: rgb(255,255,255);
+        height:	420px;
+        background: none;
         display: inline-block;
         margin: 20px;
         border-radius: 55%;
@@ -28,13 +31,13 @@ body
 
     .pupilas12{
         width:  40px;
-        height: 40px;
+        height: 240px;
         background: rgb(0,0,0);
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(50%,-50%);
-        border-radius: 50%;
+        border-radius: 70%;
         border: solid rgb(77,77,72);
     }
 .bigote{
