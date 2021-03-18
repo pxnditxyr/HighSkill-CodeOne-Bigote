@@ -1,5 +1,5 @@
 
-var movimiento= document.getElementsByClassName('pupilas','pupilas12')
+var movimiento= document.getElementsByClassName('pupilas12')
 document.onmousemove= function(){
     var x= event.clientX * 100 / window.innerWidth + "%";
     var y= event.clientY * 100 / window.innerWidth + "%";
