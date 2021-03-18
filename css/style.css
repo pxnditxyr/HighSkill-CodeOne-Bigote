@@ -8,3 +8,33 @@ body
 	background-color: #fff9b0;
 }
 
+ .ojos12{
+        position: relative;
+        top: -50%;
+        width: 100%;
+        text-align: center;
+    }
+    .vista12{
+        width: 240px;
+        height: 120px;
+        background: rgb(255,255,255);
+        display: inline-block;
+        margin: 20px;
+        border-radius: 55%;
+        position: relative;
+        overflow: hidden;
+
+    }
+
+    .pupilas12{
+        width:  40px;
+        height: 40px;
+        background: rgb(0,0,0);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(50%,-50%);
+        border-radius: 50%;
+        border: solid rgb(77,77,72);
+    }
+
