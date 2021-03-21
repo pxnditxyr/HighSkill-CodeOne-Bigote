@@ -1,47 +1,156 @@
 @import url("https://fonts.googleapis.com/css?family=Titan+One");
-*
-{
+
+* {
 	padding: 0px;
-	margin: 0px;
+	margin:  0px;
 }
-body
-{
-	background-image: url(../pintura.png);
-	/*background-color: #fff9b0;*/
+body {
+	background-image: url(../image/background.png);
+}
+.my-header {
+	width:   100%;
+	height:  100px;
+	padding: 20px;
+	position: absolute;
+	border-bottom-left-radius:  20px;
+	border-bottom-right-radius: 20px;
+	background-color: #fff9b0;
 }
 
- .ojos12{
-        position: relative;
-        top: -50%;
-        width: 100%;
-        text-align: center;
-    }
-    .vista12{
-		top: 100px;
-		left: 80px;
-        width: 240px;
-        height:	420px;
-        background: none;
-        display: inline-block;
-        margin: 20px;
-        border-radius: 55%;
-        position: relative;
-        overflow: hidden;
+.lente {
+	top:   -50%;
+	width: 100%;
+	margin-top:  145px;
+	margin-left: 50%;
+	position: relative;
+	text-align: center;
+}
 
-    }
+.vista {
+	top:    100px;
+	left:   80px;
+	width:  240px;
+	height: 420px;
+	margin: 20px;
+	display:  inline-block;
+	position: relative;
+	overflow: hidden;
+	background: none;
+	border-radius: 55%;
+}
 
-    .pupilas12{
-        width:  40px;
-        height: 240px;
-        background: rgb(0,0,0);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(50%,-50%);
-        border-radius: 70%;
-        border: solid rgb(77,77,72);
-    }
-.bigote{
+.pupila {
+	top:    50%;
+	left:   50%;
+	width:  40px;
+	height: 240px;
+	border: solid #4d4d48;
+	position: relative;
+	transform: translate(50%,-50%);
+	text-align: center;
+	background: #000;
+	border-radius: 70%;
+}
+
+.person {
+	margin-top: 200px;
+	position: absolute;
+}
+
+.sombrero {
+	width: 200px;
+	height: 160px;
+	left: 300px;
+	top: 50px;
+	border-radius: 100% 100% 0 0;
+	position: absolute;
+	color:black;
+	background-color: black;
+}
+.sombrero::before {
+	content: "";
+	position: absolute;
+	left: -50px;
+	top: 170px;
+	width: 300px;
+	height: 20px;
+	background-color: black;
+	border-radius: 35px;
+}
+
+.ojos {
+	width: 80px;
+	height: 80px;
+	left: 300px;
+	top: 270px;
+	background-color: black;
+	border-radius: 50px;
+	position: absolute;
+}
+.ojos::before {
+	content: "";
+	width: 80px;
+	height: 80px;
+	left: 130px;
+	top: 0px;
+	background-color: black;
+	border-radius: 50px;
+	position: absolute;
+}
+.ojos::after {
+	content: "";
+	position: absolute;
+	left: 110px;
+	top: -20px;
+	width: 100px;
+	height: 100px;
+	border: 10px solid;
+	border-radius: 30px;
+}
+
+.container {
+	text-align: center;
+	display: block;
+	position: absolute;
+	width: 410px;
+	height: 410px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1 {
+	width: 0%;
+	height: 0%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	font-size: 80px;
+	font-weight: 700;
+	background: #fff;
+	flex-flow: row wrap;
+	align-content: center;
+	justify-content: center;
+	font-family: "Titan One", cursive;
+}
+
+h1 span {
+	width:    90%;
+	height:   99%;
+	position: relative;
+}
+
+h1 span::before {
+	width:    100%;
+	height:   100%;
+	display:  block;
+	position: absolute;
+	background: linear-gradient(45deg, #fc5c7d, #6a82fb, #fc5c7d);
+	content: "";
+	mix-blend-mode: screen;
+}
+
+.bigote {
 	width: 90px;
 	height: 90px;
 	left: 110px;
@@ -52,7 +161,8 @@ body
 	box-shadow:
 	200px 220px 0 0 currentColor,285px 220px 0 0 currentColor;
 }
-.bigote::before{
+
+.bigote::before {
 	content: "";
 	position: absolute;
 	left: 140px;
@@ -65,7 +175,8 @@ body
 	transform-origin: right 105px;
 	animation: shakeLeft 1s ease-in-out infinite;
 }
-.bigote::after{
+
+.bigote::after {
 	content: "";
 	position: absolute;
 	left: 330px;
@@ -79,145 +190,39 @@ body
 	animation: shakeRight 1s ease-in-out infinite;
 }
 
-.sombrero{
-	width: 200px;
-	height: 160px;
-	left: 300px;
-	top: 50px;
-	border-radius: 100% 100% 0 0;
-	position: absolute;
-	color:black;
-	background-color: black;
-}
-.sombrero::before{
-	content: "";
-	position: absolute;
-	left: -50px;
-	top: 170px;
-	width: 300px;
-	height: 20px;
-	background-color: black;
-	border-radius: 35px;
-}
-
-.ojos{
-	width: 80px;
-	height: 80px;
-	left: 300px;
-	top: 270px;
-	background-color: black;
-	border-radius: 50px;
-	position: absolute;
-}
-.ojos::before{
-	content: "";
-	width: 80px;
-	height: 80px;
-	left: 130px;
-	top: 0px;
-	background-color: black;
-	border-radius: 50px;
-	position: absolute;
-}
-.ojos::after{
-	content: "";
-	position: absolute;
-	left: 110px;
-	top: -20px;
-	width: 100px;
-	height: 100px;
-	border: 10px solid;
-	border-radius: 30px;
-}
-
-
-.container {
-  text-align: center;
-  display: block;
-  position: absolute;
-  width: 410px;
-  height: 410px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-h1 {
-  background: #fff;
-  width: 0%;
-  height: 0%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  font-family: "Titan One", cursive;
-  font-size: 80px;
-  font-weight: 700;
-  flex-flow: row wrap;
-  align-content: center;
-  justify-content: center;
-}
-
-h1 span {
-  width: 90%;
-  height: 99%;
-  position: relative;
-}
-
-h1 span:before {
-  background: linear-gradient(45deg, #fc5c7d, #6a82fb, #fc5c7d);
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: absolute;
-  content: "";
-  mix-blend-mode: screen;
-}
-
-
-
-@keyframes wink
-{
-	to
-	{
+@keyframes wink {
+	to {
 		border-radius: 30%;
-		height: 20px;
-		box-shadow: 280px 120px 0 0 currentColor,
-					420px 120px 0 0 currentColor;
+		height:        20px;
+		box-shadow:    280px 120px 0 0 currentColor,
+					   420px 120px 0 0 currentColor;
 	}
 }
 
-@keyframes shakeLeft
-{
-	0%
-	{
+@keyframes shakeLeft {
+	0%   {
 		transform: rotate(-50deg);
 	}
 	
-	50%
-	{
+	50%  {
 		transform: rotate(-30deg);
 	}
 
-	100%
-	{
+	100% {
 		transform: rotate(-50deg);
 	}
 }
 
-@keyframes shakeRight
-{
-	0%
-	{
+@keyframes shakeRight {
+	0% {
 		transform: rotate(50deg);
 	}
 	
-	50%
-	{
+	50% {
 		transform: rotate(30deg);
 	}
 
-	100%
-	{
+	100% {
 		transform: rotate(50deg);
 	}
 }
