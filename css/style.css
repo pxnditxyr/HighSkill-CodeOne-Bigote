@@ -20,22 +20,17 @@ body {
 .lente {
 	top:   -50%;
 	width: 100%;
-	margin-top:  145px;
-	margin-left: 50%;
 	position: relative;
 	text-align: center;
 }
 
 .vista {
-	top:    100px;
-	left:   80px;
 	width:  240px;
 	height: 420px;
 	margin: 20px;
 	display:  inline-block;
 	position: relative;
 	overflow: hidden;
-	background: none;
 	border-radius: 55%;
 }
 
@@ -45,11 +40,11 @@ body {
 	width:  40px;
 	height: 240px;
 	border: solid #4d4d48;
-	position: relative;
+	position: absolute;
 	transform: translate(50%,-50%);
 	text-align: center;
 	background: #000;
-	border-radius: 70%;
+	border-radius: 50%;
 }
 
 .person {
