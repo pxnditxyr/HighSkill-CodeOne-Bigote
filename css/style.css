@@ -7,15 +7,6 @@
 body {
 	background-image: url(../image/background.png);
 }
-.my-header {
-	width:   100%;
-	height:  100px;
-	padding: 20px;
-	position: absolute;
-	border-bottom-left-radius:  20px;
-	border-bottom-right-radius: 20px;
-	background-color: #fff9b0;
-}
 
 .lente {
 	top:   -50%;
@@ -25,6 +16,8 @@ body {
 }
 
 .vista {
+	top:    100px;
+	left:   80px;
 	width:  240px;
 	height: 420px;
 	margin: 20px;
@@ -44,12 +37,7 @@ body {
 	transform: translate(50%,-50%);
 	text-align: center;
 	background: #000;
-	border-radius: 50%;
-}
-
-.person {
-	margin-top: 200px;
-	position: absolute;
+	border-radius: 70%;
 }
 
 .sombrero {
